@@ -15,7 +15,7 @@ public class Main {
 		AnkitPgh.setTanggalLahir("1 Januari 2002");
 		AnkitPgh.setProdi("Ilmu Komputer");
 		AnkitPgh.setAlamat("Singaraja");
-		AnkitPgh.setJeniskelamin(true); 
+		AnkitPgh.setJeniskelamin(false); 
 
 
 		

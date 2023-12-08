@@ -1,12 +1,28 @@
 package id.ac.undiksha.siak.people;
 
-public class Mahasiswa {
+public class Mahasiswa extends Manusia {
+
+
 	private String nim;
-	private String nama;
-	private String alamat;
 	private String prodi;
-	private String tanggalLahir;
-	private boolean jeniskelamin;
+	
+
+	
+	public Mahasiswa() {
+		this.nim 			= "<masukan nim>";
+		this.prodi 			= "<masukan prodi>";
+	}
+	public Mahasiswa(
+			String nim, 
+			String nama, 
+			String alamat, 
+			String prodi, 
+			String tanggalLahir, 
+			boolean jeniskelamin) {
+		super();
+		this.nim = nim;
+		this.prodi = prodi;
+	}
 	
 	
 	public void setNim(String nim) {
@@ -17,22 +33,6 @@ public class Mahasiswa {
 		return this.nim;
 	}
 
-	public String getNama() {
-		return nama;
-	}
-
-	public void setNama(String nama) {
-		this.nama = nama;
-	}
-
-	public String getAlamat() {
-		return alamat;
-	}
-
-	public void setAlamat(String alamat) {
-		this.alamat = alamat;
-	}
-
 	public String getProdi() {
 		return prodi;
 	}
@@ -41,29 +41,12 @@ public class Mahasiswa {
 		this.prodi = prodi;
 	}
 
-	public String getTanggalLahir() {
-		return tanggalLahir;
-	}
-
-	public void setTanggalLahir(String tanggalLahir) {
-		this.tanggalLahir = tanggalLahir;
-	}
-
-	public boolean isJeniskelamin() {
-		return jeniskelamin;
+	
+	public void printAll() {
+		System.out.println(this.getNim());
+		System.out.println(this.getProdi());
+		
 	}
 	
-	public String getJenisKelamin() {
-	    if (this.isJeniskelamin()) {
-	        return "Perempuan";
-	    } else {
-	        return "Laki-Laki";
-	    }
-	}
-
-	public void setJeniskelamin(boolean jeniskelamin) {
-		this.jeniskelamin = jeniskelamin;
-	}
 	
 }
-
