@@ -1,6 +1,6 @@
 package id.ac.undiksha.siak;
 
-
+import id.ac.undiksha.siak.people.Manusia;
 import id.ac.undiksha.siak.people.Mahasiswa;
 import id.ac.undiksha.siak.people.Dosen;
 public class Main {
@@ -30,9 +30,10 @@ public class Main {
 		System.out.println(AnkitPgh.getNim());
 		System.out.println(AnkitPgh.getNama());
 		System.out.println(AnkitPgh.getTanggalLahir());
-		System.out.println(AnkitPgh.getProdi());
+		//System.out.println(AnkitPgh.getProdi());
 		System.out.println(AnkitPgh.getAlamat());
 		System.out.println(AnkitPgh.getJenisKelamin());
+		
 		
 		 Dosen Michael = new Dosen();
 	        Michael.setNip("0899213");
@@ -41,6 +42,7 @@ public class Main {
 	        Michael.setBidang_keahlian("Cyber Security");
 	        Michael.setJenisKelamin(true);
 
+	        System.out.println("---------");
 	        
 	        System.out.println(Michael.getNip());
 	        System.out.println(Michael.getNama_dosen());
@@ -48,6 +50,7 @@ public class Main {
 	        System.out.println(Michael.getJenisKelamin());
 	        System.out.println(Michael.getBidang_keahlian());
 		
+	        System.out.println("-----------");
 		
 	}
 

@@ -7,19 +7,20 @@ public class Manusia {
 	private String tanggalLahir;
 	private boolean jeniskelamin;
 	
+	//object
 	public Manusia() {
 		
 		this.nama 			= "<masukan nama>";
 		this.alamat 		= "<masukan alamat>";
 		this.tanggalLahir 	= "<masukan tanggal lahir>";
 	}
-
+//construktor
 	public Manusia(
 			String nama,
 			String alamat,
 			String tanggalLahir,
 			boolean jeniskelamin) 
-	{
+	{		//kalau super () memanggil konstruktornya
 		super();
 		this.nama 			= nama;
 		this.alamat 		= alamat;
